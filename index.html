@@ -42,7 +42,7 @@
     <section class="container fw-bold my-4">
         <ul id="li-category" class="nav justify-content-center justify-content-lg-between">
             <li class="nav-item">
-                <a class="nav-link bg-secondary bg-opacity-25 rounded-3" href="#">Home</a>
+                <a onclick="loadCard()" class="nav-link bg-secondary bg-opacity-25 rounded-3" href="#">Home</a>
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Breaking news</a>
@@ -75,28 +75,26 @@
 
         <h5>
             4 items found for category Entertainment
-        </h5>
-
-    
+        </h5>    
     </section>
     <main class="container mt-4">
-        <section>
-            <div class="card border-0 mb-3 shadow bg-secondary bg-opacity-25 rounded-4" style="height: 20rem;">
+        <section id="card">
+            <!-- <div class="card border-0 mb-3 shadow bg-secondary bg-opacity-25 rounded-4" style="height: 20rem;">
                 <div class="row g-0">
                     <div class="col-md-3 text-center">
-                        <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                        <img src=""
                             class="img-thumbnail rounded-4 " alt="..." style="height: 20rem;width: 100%;">
                     </div>
                     <div class="col-md-9">
                         <div class="card-body h-100">
                           <div class="h-75">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text" style="overflow: hidden;">This is a wider card with supporting text below as a natural lead-in to
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
                           </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
-                                    <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                    <img src=""
                                         alt="" style="height: 3rem;width: 3rem;" class="rounded-circle">
                                         <h4 class="d-inline">author</h4>
                                 </div>
@@ -112,144 +110,33 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card border-0 mb-3 shadow bg-secondary bg-opacity-25 rounded-4" style="height: 20rem;">
-                <div class="row g-0">
-                    <div class="col-md-3 text-center">
-                        <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                            class="img-thumbnail rounded-4 " alt="..." style="height: 20rem;width: 100%;">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body h-100">
-                          <div class="h-75">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text" style="overflow: hidden;">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                          </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                        alt="" style="height: 3rem;width: 3rem;" class="rounded-circle">
-                                        <h4 class="d-inline">author</h4>
-                                </div>
-                                <div>
-                                    <h3>
-                                      view :  1.5
-                                    </h3>
-                                </div>
-                                <div class="me-3">
-                                    <button type="button" class="btn btn-dark">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card border-0 mb-3 shadow bg-secondary bg-opacity-25 rounded-4" style="height: 20rem;">
-                <div class="row g-0">
-                    <div class="col-md-3 text-center">
-                        <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                            class="img-thumbnail rounded-4 " alt="..." style="height: 20rem;width: 100%;">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body h-100">
-                          <div class="h-75">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text" style="overflow: hidden;">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                          </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                        alt="" style="height: 3rem;width: 3rem;" class="rounded-circle">
-                                        <h4 class="d-inline">author</h4>
-                                </div>
-                                <div>
-                                    <h3>
-                                      view :  1.5
-                                    </h3>
-                                </div>
-                                <div class="me-3">
-                                    <button type="button" class="btn btn-dark">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card border-0 mb-3 shadow bg-secondary bg-opacity-25 rounded-4" style="height: 20rem;">
-                <div class="row g-0">
-                    <div class="col-md-3 text-center">
-                        <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                            class="img-thumbnail rounded-4 " alt="..." style="height: 20rem;width: 100%;">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body h-100">
-                          <div class="h-75">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text" style="overflow: hidden;">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                          </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                        alt="" style="height: 3rem;width: 3rem;" class="rounded-circle">
-                                        <h4 class="d-inline">author</h4>
-                                </div>
-                                <div>
-                                    <h3>
-                                      view :  1.5
-                                    </h3>
-                                </div>
-                                <div class="me-3">
-                                    <button type="button" class="btn btn-dark">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card border-0 mb-3 shadow bg-secondary bg-opacity-25 rounded-4" style="height: 20rem;">
-                <div class="row g-0">
-                    <div class="col-md-3 text-center">
-                        <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                            class="img-thumbnail rounded-4 " alt="..." style="height: 20rem;width: 100%;">
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body h-100">
-                          <div class="h-75">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text" style="overflow: hidden;">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                          </div>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <img src="https://images.unsplash.com/photo-1659535948742-56813eb6f28c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                                        alt="" style="height: 3rem;width: 3rem;" class="rounded-circle">
-                                        <h4 class="d-inline">author</h4>
-                                </div>
-                                <div>
-                                    <h3>
-                                      view :  1.5
-                                    </h3>
-                                </div>
-                                <div class="me-3">
-                                    <button type="button" class="btn btn-dark">View More</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-         
+            </div> -->
+            
         </section>
     </main>
+<section>
+  <!-- Modal -->
+  <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="newsModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modalBody" class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
 
     <footer class="py-5 mt-5 text-center text-dark bg-secondary fw-bold">
    
