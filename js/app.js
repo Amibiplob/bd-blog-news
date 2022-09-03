@@ -9,7 +9,7 @@ let displayCategory = categories => {
         let liCategory = document.getElementById('li-category');
         let li = document.createElement('li');
         li.innerHTML = `
-        <li class="nav-item">
+        <li class="nav-item m-2">
         <a onclick="loadCard('${category.category_id}')" class="nav-link bg-secondary bg-opacity-25 rounded-3" href="#">${category.category_name}</a>
         </li>
 
@@ -24,18 +24,23 @@ let loadCard = (id) => {
         .then(data => displayCard(data.data));
 }
 let displayCard = newsCard => {
+   // console.log(newsCard.length)
+    document.getElementById("item").innerText = newsCard.length;
+    let card = document.getElementById('card');
+    card.textContent = '';
+
     for (const news of newsCard) {
         //   console.log(news)
-        let card = document.getElementById('card');
-        card.innerHTML = `
-        <div class="card border-0 mb-3 shadow bg-secondary bg-opacity-25 rounded-4" style="height: 20rem;">
+     let div = document.createElement('div');
+        div.innerHTML = `
+        <div class="card border-0 mb-4 shadow bg-secondary bg-opacity-25 rounded-4">
         <div class="row g-0">
             <div class="col-md-3 col-12 text-center">
                 <img src="${news.thumbnail_url}"
-                    class="img-thumbnail rounded-4 " alt="..." style="height: 20rem;width: 100%;">
+                    class="img-thumbnail w-auto rounded-4 " alt="...">
             </div>
             <div class="col-md-9 col-12">
-            <div class="card-body d-flex flex-column justify-content-between">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
 
             <div>
                 <h5 class="card-title">${news.title}</h5>
@@ -62,9 +67,12 @@ let displayCard = newsCard => {
         </div>
     </div>
         `
+        card.appendChild(div)
     }
 
 }
+
+//                  modal
 
 let loadModal = (newsId) => {
     fetch(`https://openapi.programming-hero.com/api/news/${newsId}`)
@@ -76,10 +84,10 @@ let displayModal = (data) => {
    title.innerText =`
    ${data.title}
    `
-   let modalBody = document.getElementById('modalBody')
+   let modalBody = document.getElementById('modal-body')
    modalBody.innerHTML =`
-   <p>Author Name : ${data.author.name}</p>
-   <p>Published Date : ${data.author.published_date}</p>
+   <p>Author Name : ${data.author.name ? data.author.name : 'No Data Found'}</p>
+   <p>Published Date : ${data.author.published_date ? data.author.published_date : 'No Data Found'}</p>
    <p>Details : ${data.details}</p>
   
    `

@@ -29,7 +29,7 @@
                                 role="button">News</a>
                         </li>
                         <li class="nav-item mx-lg-4">
-                            <a class="nav-link btn btn-outline-success px-md-3" href="#" role="button">Blog</a>
+                            <a class="nav-link btn btn-outline-success px-md-3" href="blog.html" role="button">Blog</a>
                         </li>
 
                     </ul>
@@ -39,9 +39,9 @@
         </nav>
     </header>
     <hr class="container">
-    <section class="container fw-bold my-4">
-        <ul id="li-category" class="nav justify-content-center justify-content-lg-between">
-            <li class="nav-item">
+    <section class="container fw-bold">
+        <ul id="li-category" class="nav my-4 justify-content-center justify-content-lg-between">
+            <li class="nav-item m-2">
                 <a onclick="loadCard()" class="nav-link bg-secondary bg-opacity-25 rounded-3" href="#">Home</a>
             </li>
             <!-- <li class="nav-item">
@@ -74,7 +74,7 @@
     <section class="container p-3 bg-light">
 
         <h5>
-            4 items found for category Entertainment
+            <span id="item">0</span> items found
         </h5>    
     </section>
     <main class="container mt-4">
@@ -83,7 +83,7 @@
                 <div class="row g-0">
                     <div class="col-md-3 text-center">
                         <img src=""
-                            class="img-thumbnail rounded-4 " alt="..." style="height: 20rem;width: 100%;">
+                            class="img-thumbnail rounded-4 " alt="...">
                     </div>
                     <div class="col-md-9">
                         <div class="card-body h-100">
@@ -120,10 +120,11 @@
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="newsModalLabel"></h5>
+          <h5 class="modal-title" id="newsModalLabel">
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div id="modalBody" class="modal-body">
+        <div id="modal-body" class="modal-body">
 
         </div>
         <div class="modal-footer">
