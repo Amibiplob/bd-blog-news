@@ -89,9 +89,9 @@ let displayModal = (data) => {
    `
     let modalBody = document.getElementById('modal-body')
     modalBody.innerHTML = `
-   <p>Author Name : ${data.author.name ? data.author.name : 'No Data Found'}</p>
-   <p>Published Date : ${data.author.published_date ? data.author.published_date : 'No Data Found'}</p>
-   <p>Details : ${data.details}</p>
+   <p><span class="fw-bold">Author Name</span> : ${data.author.name ? data.author.name : 'No Data Found'}</p>
+   <p><span class="fw-bold">Published Date</span> : ${data.author.published_date ? data.author.published_date : 'No Data Found'}</p>
+   <p><span class="fw-bold">Details</span> : ${data.details}</p>
   
    `
 }
