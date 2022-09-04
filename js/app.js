@@ -23,6 +23,7 @@ let loadCard = (id) => {
         .then(res => res.json())
         .then(data => displayCard(data.data));
 }
+
 let displayCard = newsCard => {
     // console.log(newsCard.length)
     document.getElementById("item").innerText = newsCard.length;
@@ -95,6 +96,4 @@ let displayModal = (data) => {
   
    `
 }
-
-
 loadCategory();
